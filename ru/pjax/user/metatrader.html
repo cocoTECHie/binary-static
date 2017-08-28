@@ -1,0 +1,454 @@
+<div id="content" class="metatrader-content">
+            <div id="page_info" style="display:none;">
+                <title>Управление счётом на MetaTrader | Binary.com</title>
+                <div id="content_class">metatrader-content</div>
+            </div>
+            
+
+
+
+  <div class="container">
+    <div>
+        <h1>Управление счётом на MetaTrader</h1>
+    </div>
+    <p id="page_msg" class="notice-msg center-text invisible"></p>
+    <div id="mt_loading"><div class="barspinner dark">
+    
+    <div class="rect1"></div>
+    
+    <div class="rect2"></div>
+    
+    <div class="rect3"></div>
+    
+    <div class="rect4"></div>
+    
+    <div class="rect5"></div>
+    
+</div></div>
+    <div id="mt_account_management" class="gr-row fill-bg-color invisible">
+        <div id="mt_left_panel" class="mt-panel gr-3 gr-4-t gr-12-p gr-12-m gr-no-gutter">
+            <div class="top gr-hide-p gr-hide-m">
+                <div style="width: 80px; height: 80px; margin: 0 auto; background: #f2f2f2; border: 1px solid #004385; border-radius: 40px;"></div> <!-- TODO: replace with image -->
+            </div>
+            <div id="account_selector">
+                <h4 id="mt5_account"></h4>
+                <div id="accounts_list">
+                    <div></div>
+                </div>
+            </div>
+            <div id="account_detail">
+                <div class="acc-info mt-container has-account invisible">
+                    <div class="gr-row">
+                        <div class="gr-5">Логин:</div><div data="login" class="gr-7"></div>
+                        <div class="gr-5">Имя:</div><div data="name" class="gr-7"></div>
+                        <div class="gr-5">Баланс:</div><div data="balance" class="gr-7"></div>
+                        <div class="gr-5 invisible">Кредитный рычаг:</div><div data="leverage" class="gr-7 invisible"></div>
+                    </div>
+                </div>
+                <div class="acc-actions has-account invisible">
+                    <span class="invisible"><a href="javascript:;" class="act_new_account"></a></span>
+                    <a href="javascript:;" class="act_deposit">
+                        <img src="/images/pages/metatrader/deposit.svg" alt="" />
+                        <span>Пополнение</span>
+                    </a>
+                    <a href="javascript:;" class="act_withdrawal">
+                        <img src="/images/pages/metatrader/withdraw.svg" alt="" />
+                        <span>Вывод</span>
+                    </a>
+                    <a href="javascript:;" class="act_password_change">
+                        <img src="/images/pages/metatrader/password.svg" alt="" />
+                        <span>Пароль</span>
+                    </a>
+                </div>
+                <div id="account_desc" class="mt-container"></div>
+            </div>
+        </div>
+        <div id="mt_right_panel" class="mt-panel gr-9 gr-8-t gr-12-p gr-12-m gr-no-gutter">
+            <div class="top mt-container gr-hide-p gr-hide-m">
+                <p id="top_msg" class="notice-msg center-text invisible">Пожалуйста, <a href="/ru/new_account/realws.html">пройдите обновление</a>, чтобы открыть реальный счёт на MetaTrader 5.</p>
+            </div>
+            <div class="fst-container mt-container">
+                <div id="fst_action" class="invisible">
+                    <h3></h3>
+                    <div class="separator primary-bg-color"></div>
+                    <p id="main_msg" class="notice-msg center-text invisible"></p>
+                    <fieldset>
+                        <form id="frm_action" class="invisible"></form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <div id="templates" class="invisible">
+            <div class="acc-name">
+                <div class="mt-new invisible">
+                    <img src="/images/pages/metatrader/signup.svg" />
+                </div>
+                <div class="mt-balance">&nbsp;</div>
+                <div class="mt-type"></div>
+                <div class="mt-login invisible"></div>
+            </div>
+
+            
+            <div class="account-desc">
+                <div class="demo_vanuatu_cent real_vanuatu_cent">
+                    <p>Наш Центовый счёт на платформе MetaTrader 5 идеально подходит для начинающих трейдеров, желающих начать торговлю с небольших сумм.</p>
+                    <ul class="checked small no-padding">
+                        
+                            <li>Самый высокий кредитный рычаг – до 1:1 000</li>
+                        
+                            <li>Фиксированные спреды</li>
+                        
+                            <li>Мгновенное исполнение</li>
+                        
+                            <li>Никаких комиссий</li>
+                        
+                    </ul>
+                    <a class="more" href="#" target="_blank">Подробнее</a>
+                </div>
+                <div class="demo_vanuatu_standard real_vanuatu_standard">
+                    <p>Стандартный счёт на MetaTrader 5 предоставляет средний размер кредитного плеча и большой выбор спредов, которые подойдут каждому трейдеру.</p>
+                    <ul class="checked small no-padding">
+                        
+                            <li>Кредитный рычаг до 1:300</li>
+                        
+                            <li>Переменные спреды</li>
+                        
+                            <li>Рыночное исполнение</li>
+                        
+                            <li>Никаких комиссий</li>
+                        
+                    </ul>
+                    <a class="more" href="#" target="_blank">Подробнее</a>
+                </div>
+                <div class="demo_vanuatu_stp real_vanuatu_stp">
+                    <p>Счёт STP на MetaTrader 5 предоставляет самые узкие спреды и соединяет Вас с рынком напрямую.</p>
+                    <ul class="checked small no-padding">
+                        
+                            <li>Кредитный рычаг до 1:100</li>
+                        
+                            <li>Переменные спреды</li>
+                        
+                            <li>Рыночное исполнение</li>
+                        
+                            <li>Никаких комиссий</li>
+                        
+                    </ul>
+                    <a class="more" href="#" target="_blank">Подробнее</a>
+                </div>
+                <div class="demo_costarica real_costarica">
+                    <p>Волатильный счёт позволяет получать прибыль, делая ставки на рост или снижение цены инструмента.</p>
+                    <ul class="checked small no-padding">
+                        
+                            <li>Кредитный рычаг до 1:100</li>
+                        
+                            <li>Переменные спреды</li>
+                        
+                            <li>Рыночное исполнение</li>
+                        
+                            <li>Никаких комиссий</li>
+                        
+                    </ul>
+                    <a class="more" href="#" target="_blank">Подробнее</a>
+                </div>
+            </div>
+
+            <form id="frm_new_account">
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label>
+                Тип счёта
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <span class="text-display">
+                                                    <span id="lbl_account_type" ></span>
+                    </span>
+            
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label>
+                Email
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <span class="text-display">
+                                                    <span id="lbl_email" ></span>
+                    </span>
+            
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label for="txt_name">
+                Имя и фамилия
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <input type="text" id="txt_name" maxlength="30" autocomplete="off" />
+            
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label for="txt_main_pass">
+                Основной пароль (доступ к торговле)
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <input type="password" id="txt_main_pass" maxlength="25"  />
+            <div class="hint">Минимум 8 символов, включая цифры, строчные и прописные буквы.</div>
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label for="txt_re_main_pass">
+                Подтвердите основной пароль
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <input type="password" id="txt_re_main_pass" maxlength="25"  />
+            
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label for="txt_investor_pass">
+                Пароль инвестора (только для чтения)
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <input type="password" id="txt_investor_pass" maxlength="25"  />
+            
+        </div>
+    </div>
+                <div class="gr-row ">
+        <div class="gr-12-m gr-padding-20 gr-centered">
+            <input id="chk_tnc" type="checkbox" />
+            <label for="chk_tnc">Я прочитал и согласен с  <a target="_blank" href="/ru/terms-and-conditions.html#legal-mt">правилами и условиями</a> сайта.</label>
+        </div>
+    </div>
+
+                <div class="gr-row ">
+                <div class="gr-8 gr-push-4 gr-12-m gr-push-0-m center-text-m">
+            
+        
+        <div id="msg_form" class="error-msg invisible"></div>
+        
+        <div class="gr-padding-10">
+        
+            <button id="btn_submit" type="submit">Открыть счёт</button>
+        </div>
+    
+                </div>
+            </div>
+            </form>
+
+            <form id="frm_password_change">
+                <div class="gr-row form-row center-text-m invisible">
+        <div class="gr-4 gr-12-m">
+            <label>
+                Логин
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <span class="text-display">
+                                                    <span id="lbl_login" ></span>
+                    </span>
+            
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label for="txt_old_password">
+                Текущий пароль
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <input type="password" id="txt_old_password" maxlength="25"  />
+            
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label for="txt_new_password">
+                Новый пароль
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <input type="password" id="txt_new_password" maxlength="25"  />
+            <div class="hint">Минимум 8 символов, включая цифры, строчные и прописные буквы.</div>
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label for="txt_re_new_password">
+                Подтвердите новый пароль
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <input type="password" id="txt_re_new_password" maxlength="25"  />
+            
+        </div>
+    </div>
+
+                <div class="gr-row ">
+                <div class="gr-8 gr-push-4 gr-12-m gr-push-0-m center-text-m">
+            
+        
+        <div id="msg_form" class="error-msg invisible"></div>
+        
+        <div class="gr-padding-10">
+        
+            <button id="btn_submit" type="submit">Сменить пароль</button>
+        </div>
+    
+                </div>
+            </div>
+            </form>
+
+            <form id="frm_deposit">
+                <p>Переведите средства со счёта Binary.com на Ваш счёт MetaTrader 5:</p>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label>
+                Перевести со счёта
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <span class="text-display">
+                                                    <span id="lbl_from" ></span>
+                    </span>
+            
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label>
+                Перевести на счёт
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <span class="text-display">
+                                                    <span id="lbl_to" ></span>
+                    </span>
+            
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label for="txt_amount">
+                Количество
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                &#36; <input type="text" id="txt_amount" maxlength="10" />
+            
+        </div>
+    </div>
+
+                <div class="gr-row ">
+                <div class="gr-8 gr-push-4 gr-12-m gr-push-0-m center-text-m">
+            
+        
+        <div id="msg_form" class="error-msg invisible"></div>
+        
+        <div class="gr-padding-10">
+        
+            <button id="btn_submit" type="submit">Пополнение</button>
+        </div>
+    
+                </div>
+            </div>
+
+                <p class="notice-msg">Хотите пополнить Реальный счёт Binary.com? <a href="/ru/cashier.html">Перейдите в раздел Касса</a></p>
+            </form>
+
+            <form id="frm_withdrawal">
+                <p>Переведите средства со счёта MetaTrader 5 на счёт Binary.com:</p>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label>
+                Вывести из
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <span class="text-display">
+                                                    <span id="lbl_from" ></span>
+                    </span>
+            
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label>
+                Перевести на счёт
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <span class="text-display">
+                                                    <span id="lbl_to" ></span>
+                    </span>
+            
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label for="txt_main_pass">
+                Основной пароль на MetaTrader 5
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                <input type="password" id="txt_main_pass" maxlength="25"  />
+            
+        </div>
+    </div>
+                <div class="gr-row form-row center-text-m ">
+        <div class="gr-4 gr-12-m">
+            <label for="txt_amount">
+                Количество
+            </label>
+        </div>
+        <div class="gr-8 gr-12-m">
+                                &#36; <input type="text" id="txt_amount" maxlength="10" />
+            
+        </div>
+    </div>
+
+                <div class="gr-row ">
+                <div class="gr-8 gr-push-4 gr-12-m gr-push-0-m center-text-m">
+            
+        
+        <div id="msg_form" class="error-msg invisible"></div>
+        
+        <div class="gr-padding-10">
+        
+            <button id="btn_submit" type="submit">Вывод</button>
+        </div>
+    
+                </div>
+            </div>
+
+                <p class="notice-msg">Хотите вывести средства с Реального счёта Binary.com?  <a href="/ru/cashier.html">Перейдите в раздел Касса</a></p>
+            </form>
+
+            <div id="messages">
+                <div id="msg_switch">Чтобы выполнить данное действие, перейдите на Реальный счет Binary.com.</div>
+                <div id="msg_upgrade">Чтобы выполнить данное действие, <a href="/ru/new_account/realws.html">откройте Реальный счет Binary.com</a>.</div>
+                <div id="msg_assessment">Чтобы открыть финансовый счёт MetaTrader 5, пожалуйста, заполните страницу <a href="/ru/user/settings/assessmentws.html">Финансовая оценка</a>.</div>
+                <div id="msg_authenticate">
+                    <div class="align-start">
+                        <p>Чтобы вывести средства с Финансового счёта MetaTrader 5, пройдите аутентификацию Вашего счёта на Binary.com.</p>
+                        <p>Пройдите аутентификацию счёта сейчас, подтвердив Вашу личность и адрес. Для начала, просто отправьте нам копии следующих документов по адресу <a href='mailto:authentications@binary.com' rel='nofollow'>authentications@binary.com</a>:</p>
+<ul class="checked">
+    <li>Подтверждение личности: отсканированная копия Вашего паспорта, водительских прав (временных или постоянных) или любого удостоверения личности, содержащего Ваше имя и дату рождения.</li>
+    <li>Подтверждение адреса: отсканированный счёт за коммунальные услуги или выписка с Вашего банковского счёта (датированные не позднее, чем за 3 месяца до текущей даты). Документ, подтверждающий адрес, должен содержать Ваше имя, адрес, дату, а также название выдавшей его организации.</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
