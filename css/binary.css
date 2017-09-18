@@ -3194,6 +3194,9 @@ body #not_authenticated_financial ul.checked > li {
   cursor: pointer;
   width: 100%;
 }
+#trading_socket_container #contract_prices_container .price_container .contract_purchase.button-disabled .purchase_button {
+  cursor: auto;
+}
 #trading_socket_container #contract_prices_container #contract_purchase_reference {
   margin-bottom: 10px;
   padding: 7px;
@@ -3405,10 +3408,6 @@ body #not_authenticated_financial ul.checked > li {
 }
 #trading_socket_container #duration_units {
   margin-right: 10px;
-}
-#trading_socket_container #duration_tooltip_wrapper {
-  line-height: 28px;
-  white-space: nowrap;
 }
 #trading_socket_container .small_width_input {
   width: 70px;
