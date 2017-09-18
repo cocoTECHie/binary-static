@@ -130,6 +130,12 @@ hr {
   margin: 20px;
 }
 
+.icon--sm {
+  width: 32px;
+  height: 32px;
+  margin: 20px;
+}
+
 .box {
   border: 1px solid #15212d;
   margin: 15px 0;
@@ -173,7 +179,7 @@ hr {
   right: 0;
   left: 0;
   width: 80vw;
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -209,6 +215,13 @@ hr {
 
 .chart-heading-left {
   left: 0;
+}
+
+.chart-note {
+  margin: auto;
+  font-style: italic;
+  font-weight: bold;
+  color: #394171;
 }
 
 .blue-bg {
@@ -497,6 +510,40 @@ input[type='text']:focus, input[type='submit']:focus {
 
 button {
   outline: none;
+}
+
+#board-of-directors {
+  position: relative;
+  border-top: 5px solid #e98024;
+}
+#board-of-directors img {
+  display: block;
+  margin: auto;
+  max-width: 200px;
+}
+#board-of-directors a {
+  display: inline-block;
+}
+#board-of-directors h2 {
+  position: absolute;
+  padding: 35px 15px;
+  color: #fff;
+  background-color: #e98024;
+}
+#board-of-directors h4 {
+  margin: 1em 0;
+}
+
+.social--linkedin {
+  content: url("../images/ico/icons/linkedin.svg");
+}
+
+.social--twitter {
+  content: url("../images/ico/icons/twitter.svg");
+}
+
+.social--youtube {
+  content: url("../images/ico/icons/youtube.svg");
 }
 
 /* Grid layout system */
