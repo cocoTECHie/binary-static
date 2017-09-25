@@ -70,6 +70,11 @@ h1, h2, h3 {
   font-weight: 500 !important;
 }
 
+button {
+  outline: none;
+  text-transform: none !important;
+}
+
 .container {
   max-width: 1200px !important;
 }
@@ -420,9 +425,6 @@ input[type='text']:focus, input[type='submit']:focus {
 #faq-section {
   padding: 100px 15px;
 }
-#faq-section #faq-btn {
-  text-transform: none !important;
-}
 
 .faq {
   margin: 15px 0;
@@ -456,7 +458,6 @@ input[type='text']:focus, input[type='submit']:focus {
 #read-im-section button {
   padding: 20px 30px;
   font-size: 28px;
-  text-transform: none;
 }
 
 .disclaimer {
@@ -508,10 +509,6 @@ input[type='text']:focus, input[type='submit']:focus {
   text-transform: uppercase;
 }
 
-button {
-  outline: none;
-}
-
 #board-of-directors {
   position: relative;
   border-top: 5px solid #e98024;
@@ -544,6 +541,22 @@ button {
 
 .social--youtube {
   content: url("../images/ico/icons/youtube.svg");
+}
+
+.acquired-bg {
+  position: relative;
+  background: url("../images/ico/images/img5@2x.png") no-repeat bottom center scroll;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#acquired-section {
+  margin-bottom: 160px;
+}
+#acquired-section h2 {
+  line-height: 1.4;
 }
 
 /* Grid layout system */
