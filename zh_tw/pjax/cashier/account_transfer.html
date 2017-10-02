@@ -11,7 +11,8 @@
 
 <div class="invisible" id="client_message">
     <p class="center-text notice-msg">
-        <span class="invisible" id="no_account">帳戶之間不可轉帳。</span> <span class="invisible" id="no_balance">請 <a href="/zh_tw/cashier/forwardws.html#deposit">存</a>入您的帳戶。</span>
+        <span class="invisible" id="no_account">帳戶之間不可轉帳。</span> <span class="invisible" id="not_enough_balance">The minimum required amount for using the account transfer facility is <span id="min_required_amount"></span>.</span> <span class="invisible" id="no_balance">請 <a href="/zh_tw/cashier/forwardws.html#deposit">存</a>入您的帳戶。</span>
+        <span class="invisible" id="limit_reached">You have reached your withdrawal limit.</span>
     </p>
 </div>
 
@@ -81,6 +82,7 @@
                                 
             <label id="currency"></label>
             <input id="amount" name="amount" type="text" maxlength="20" autocomplete="off" />
+            <div class="hint" id="range_hint"></div>
         
             
         </div>

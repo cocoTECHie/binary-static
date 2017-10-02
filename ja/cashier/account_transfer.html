@@ -58,14 +58,14 @@
         <link rel="alternate" href="/zh_cn/cashier/account_transfer.html" hreflang="ZH_CN" />   
         <link rel="alternate" href="/zh_tw/cashier/account_transfer.html" hreflang="ZH_TW" />   
 
-         <link rel="stylesheet" href="/css/binary.min.css?acl3skvp" />
-         <link rel="stylesheet" href="https://style.binary.com/binary.css?acl3skvp" />
+         <link rel="stylesheet" href="/css/binary.min.css?11r6p75k" />
+         <link rel="stylesheet" href="https://style.binary.com/binary.css?11r6p75k" />
         
-         <script src='/js/texts/ja.js?acl3skvp'></script>
-         <script src='/js/manifest.js?acl3skvp'></script>
+         <script src='/js/texts/ja.js?11r6p75k'></script>
+         <script src='/js/manifest.js?11r6p75k'></script>
          <script src='/js/vendor.min.js?357979d4'></script>
-         <script src='/js/binary.min.js?acl3skvp'></script>
-         <script src='https://style.binary.com/binary.js?acl3skvp'></script>
+         <script src='/js/binary.min.js?11r6p75k'></script>
+         <script src='https://style.binary.com/binary.js?11r6p75k'></script>
         
     </head>
 
@@ -413,7 +413,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div class="invisible" id="client_message">
     <p class="center-text notice-msg">
-        <span class="invisible" id="no_account">口座振替はご利用いただけません。</span> <span class="invisible" id="no_balance">ご口座に<a href="/ja/cashier/forwardws.html#deposit">d入金</a>してください。</span>
+        <span class="invisible" id="no_account">口座振替はご利用いただけません。</span> <span class="invisible" id="not_enough_balance">The minimum required amount for using the account transfer facility is <span id="min_required_amount"></span>.</span> <span class="invisible" id="no_balance">ご口座に<a href="/ja/cashier/forwardws.html#deposit">d入金</a>してください。</span>
+        <span class="invisible" id="limit_reached">You have reached your withdrawal limit.</span>
     </p>
 </div>
 
@@ -483,6 +484,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 
             <label id="currency"></label>
             <input id="amount" name="amount" type="text" maxlength="20" autocomplete="off" />
+            <div class="hint" id="range_hint"></div>
         
             
         </div>
