@@ -58,14 +58,14 @@
         <link rel="alternate" href="/zh_cn/user/security/limitsws.html" hreflang="ZH_CN" />   
         <link rel="alternate" href="/zh_tw/user/security/limitsws.html" hreflang="ZH_TW" />   
 
-         <link rel="stylesheet" href="/css/binary.min.css?j9dc9p4c" />
-         <link rel="stylesheet" href="https://style.binary.com/binary.css?j9dc9p4c" />
+         <link rel="stylesheet" href="/css/binary.min.css?3y9ufnil" />
+         <link rel="stylesheet" href="https://style.binary.com/binary.css?3y9ufnil" />
         
-         <script src='/js/texts/ja.js?j9dc9p4c'></script>
-         <script src='/js/manifest.js?j9dc9p4c'></script>
+         <script src='/js/texts/ja.js?3y9ufnil'></script>
+         <script src='/js/manifest.js?3y9ufnil'></script>
          <script src='/js/vendor.min.js?b0d41894'></script>
-         <script src='/js/binary.min.js?j9dc9p4c'></script>
-         <script src='https://style.binary.com/binary.js?j9dc9p4c'></script>
+         <script src='/js/binary.min.js?3y9ufnil'></script>
+         <script src='https://style.binary.com/binary.js?3y9ufnil'></script>
         
     </head>
 
@@ -434,7 +434,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                     
                     <td>
-                        最大保有ポジション <a href="javascript:;" data-balloon-length="xlarge" class="no-underline" data-balloon="最大保有ポジションの総数を示し、各行を１件分のオープンポジションとしてカウントします。最大件数を超えてのポジション保有はできませんので既存のオープンポジションを閉めて頂いてから新規トレードの購入が可能になります。"><img src="/images/common/question_1.png"></a>
+                        最大保有ポジション<a href="javascript:;" data-balloon-length="xlarge" class="no-underline" data-balloon="最大保有ポジションの総数を示し、各行を１件分のオープンポジションとしてカウントします。最大件数を超えてのポジション保有はできませんので既存のオープンポジションを閉めて頂いてから新規トレードの購入が可能になります。"><img src="/images/common/question_1.png"></a>
                     </td>
                     
                 
@@ -450,7 +450,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                     
                     <td>
-                        口座残高限度額 <a href="javascript:;" data-balloon-length="xlarge" class="no-underline" data-balloon="口座で保有可能な口座残高の限度額を示します。限度額を超えた場合は出金手続きをお願いいたします。"><img src="/images/common/question_1.png"></a>
+                        口座残高限度額<a href="javascript:;" data-balloon-length="xlarge" class="no-underline" data-balloon="口座で保有可能な口座残高の限度額を示します。限度額を超えた場合は出金手続きをお願いいたします。"><img src="/images/common/question_1.png"></a>
                     </td>
                     
                 
@@ -466,7 +466,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                     
                     <td>
-                        保有ポジション合計ペイアウト上限額 <a href="javascript:;" data-balloon-length="xlarge" class="no-underline" data-balloon="保有ポジションに対する未現実利益利益を示します。上限額に達した場合、保有ポジションを一部決済するまで新規注文を行えません。"><img src="/images/common/question_1.png"></a>
+                        保有ポジション合計ペイアウト上限額<a href="javascript:;" data-balloon-length="xlarge" class="no-underline" data-balloon="保有ポジションに対する未現実利益利益を示します。上限額に達した場合、保有ポジションを一部決済するまで新規注文を行えません。"><img src="/images/common/question_1.png"></a>
                     </td>
                     
                 
@@ -482,7 +482,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                     
                     <td>
-                        一通貨ごとのペイアウト合計限度額 <a href="javascript:;" data-balloon-length="xlarge" class="no-underline" data-balloon="一通貨ごとのペイアウト合計限度額となります。"><img src="/images/common/question_1.png"></a>
+                        一通貨ごとのペイアウト合計限度額<a href="javascript:;" data-balloon-length="xlarge" class="no-underline" data-balloon="一通貨ごとのペイアウト合計限度額となります。"><img src="/images/common/question_1.png"></a>
                     </td>
                     
                 
@@ -497,7 +497,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <tr>
                 
                     
-                    <td class="gr-padding-10">
+                    <td>
+                        Maximum aggregate payouts on open positions per symbol
+                    </td>
+                    
+                
+                    
+                    <td id="payout-per-symbol">
+                        
+                    </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                
+                    
+                    <td class="gr-padding-10" id="gap">
                         
                     </td>
                     
@@ -514,7 +530,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                     
                     <th class="align-start">
-                        取引限度額（1日） <a href="javascript:;" data-balloon-length="xlarge" class="no-underline" data-balloon="購入可能な１日あたりのトレードの総額を示します。"><img src="/images/common/question_1.png"></a>
+                        取引限度額（1日）<a href="javascript:;" data-balloon-length="xlarge" class="no-underline" data-balloon="購入可能な１日あたりのトレードの総額を示します。"><img src="/images/common/question_1.png"></a>
                     </th>
                     
                 

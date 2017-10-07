@@ -2561,10 +2561,11 @@ div.kineticjs-content {
 .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table #trade_details_entry_spot, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table #trade_details_current_spot, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit #trade_details_entry_spot, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit #trade_details_current_spot {
   line-height: 32px;
 }
+.inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table #trade_details_entry_spot span, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table #trade_details_current_spot span, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit #trade_details_entry_spot span, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit #trade_details_current_spot span {
+  padding-right: 20px;
+}
 .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table #trade_details_entry_spot a, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table #trade_details_current_spot a, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit #trade_details_entry_spot a, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit #trade_details_current_spot a {
-  float: right;
   margin-bottom: 0;
-  cursor: pointer;
 }
 .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table .audit-table, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit .audit-table {
   padding: 40px;
@@ -2584,6 +2585,12 @@ div.kineticjs-content {
 }
 .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table .audit-table table td.remark, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table .audit-table table td.secondary-time, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table .audit-table table td.secondary-bg-color, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit .audit-table table td.remark, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit .audit-table table td.secondary-time, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit .audit-table table td.secondary-bg-color {
   font-weight: bold;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table .audit-table table td.secondary-time, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit .audit-table table td.secondary-time {
   border-radius: 3px 0 0 3px;
@@ -2603,6 +2610,12 @@ div.kineticjs-content {
   .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table .audit-table, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit .audit-table {
     padding: 5px;
   }
+}
+.inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table .explanation-section, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit .explanation-section {
+  padding: 40px;
+}
+.inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_table .explanation-section p, .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit .explanation-section p {
+  line-height: 25px;
 }
 .inpage_popup_container .inpage_popup_content_box #sell_content_wrapper #sell_details_audit {
   border-left: none;
@@ -2907,6 +2920,11 @@ body #not_authenticated_financial ul.checked > li {
 }
 .landing_page-content .box {
   padding: 10px 30px;
+}
+
+#client-limits img {
+  margin-left: 5px;
+  margin-bottom: 3px;
 }
 
 .timeline {
