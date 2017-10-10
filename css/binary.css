@@ -464,9 +464,6 @@ button .barspinner.white {
   text-decoration: none;
   background-color: #14602b;
 }
-.static_full .padding-top-20 {
-  padding-top: 20px;
-}
 
 .days_to_crack {
   width: -webkit-fit-content;
@@ -480,6 +477,14 @@ button .barspinner.white {
 }
 .days_to_crack.green {
   color: #2e8836;
+}
+
+ul.bullet.gr-row > li {
+  display: list-item;
+}
+
+.pull-requests-content {
+  margin-bottom: 0 !important;
 }
 
 *, *:after, *:before {
