@@ -3798,18 +3798,17 @@ body #not_authenticated_financial ul.checked > li {
   margin-bottom: 20px;
 }
 
-#deposit_btn_wrapper {
+#deposit_btn_trade {
   float: right;
-  padding: 10px 20px;
-  border-radius: 3px;
+  margin: 0;
 }
-#deposit_btn_wrapper a {
-  color: #fff;
+#deposit_btn_trade span {
+  background-color: #e98024;
 }
-#deposit_btn_wrapper a:hover {
-  text-decoration: none;
+#deposit_btn_trade span:hover {
+  background-color: #d17320;
 }
-#deposit_btn_wrapper a img {
+#deposit_btn_trade span img {
   margin-right: 5px;
 }
 
