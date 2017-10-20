@@ -1461,6 +1461,8 @@ div.kineticjs-content {
 /* trading page */
 #trading_socket_container #guideBtn {
   float: right;
+  height: 33px;
+  line-height: 33px;
 }
 
 .home-content .signup-box, .home-jp-content .signup-box {
@@ -3799,17 +3801,19 @@ body #not_authenticated_financial ul.checked > li {
   margin-bottom: 20px;
 }
 
-#deposit_btn_trade {
+#deposit_btn_trade, #upgrade_btn_trade {
   float: right;
-  margin: 0;
+  margin: 0 0 0 10px;
 }
-#deposit_btn_trade span {
+#deposit_btn_trade span, #upgrade_btn_trade span {
+  height: 20px;
+  line-height: 20px;
   background-color: #E98024;
 }
-#deposit_btn_trade span:hover {
+#deposit_btn_trade span:hover, #upgrade_btn_trade span:hover {
   background-color: #d17320;
 }
-#deposit_btn_trade span img {
+#deposit_btn_trade span img, #upgrade_btn_trade span img {
   margin-right: 5px;
 }
 
